@@ -1,13 +1,19 @@
+#valores já inseridos
 import numpy as np
-A= np.array([])
+a= np.array([1,0,5,-2,-5,7])
+print(a)
+
+# para inserir valores
+b= np.array([])
 
 for i in range(0,6):
     num= int(input('informe um valor: '))
-    A= np.append(A,num)
-soma= A[0]+A[1]+A[5]
+    b= np.append(b,num)
+soma= b[0]+b[1]+b[5]
 print("a soma dos elementos na posição 0,1 e 5",soma)
 
-A[4]=100
+a[4]=100
+print("alterado",a)
 
 for i in range(0,6):
-    print("A[",i,"]",A[i])
+    print("a[",i,"]",a[i])
