@@ -21,8 +21,6 @@ print("alterado",b)
 for i in range(0,6):
     print("a[",i,"]",a[i])
 
-
-
 #metodo tradicional
 for i in range(5):
     if num[1]%2==0:#número par
@@ -50,3 +48,18 @@ print(c[negativos])
 positivos = np.where(c>0)
 #mostra e soma os valores acima de 0
 print(sum(c[positivos]))
+
+#15
+B= np.array([])
+n= int(input("informe quantos valores terão seu array: "))
+
+for i in range(n):
+    numB= int(input('informe um valor: '))
+    #append serve para inserir os valores
+    B= np.append(B,numb)
+
+#mostrar números pares e impares
+paresB = B[B%2==0]
+print(paresB)
+imparB= B[B%2!=0]
+print(imparB)
