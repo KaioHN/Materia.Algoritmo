@@ -33,3 +33,20 @@ pos = np.where(b%2==0)
 print(pos)
 pares = b[pos]
 print(pares)
+
+import numpy as np
+
+#11.
+c= np.array([])
+
+for i in range(0,10):
+    #para inserir valores reais
+    valor= float(input('informe um valor: '))
+    c= np.append(c,valor)
+
+negativos = np.where(c<0)
+#procura e mostra os números negativos
+print(c[negativos])
+positivos = np.where(c>0)
+#mostra e soma os valores acima de 0
+print(sum(c[positivos]))
