@@ -34,7 +34,7 @@ print(pares)
 
 import numpy as np
 
-#11.
+#11. daqui pra baixo foi feito 16/09/2024.
 c= np.array([])
 
 for i in range(0,10):
