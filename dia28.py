@@ -39,3 +39,13 @@ def mdc(x, y):
 x = int(input("Informe um valor: "))
 y = int(input("Informe um valor: "))
 print(mdc(x, y))
+
+def mult(a,b):
+    if b == 0:
+        return a
+    else:
+        return a + (mult(a,b-1))
+
+a = int(input("Informe um valor: "))
+b = int(input("Informe um valor: "))
+print(mult(a,b))
